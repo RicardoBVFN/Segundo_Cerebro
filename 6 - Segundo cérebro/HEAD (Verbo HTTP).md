@@ -11,11 +11,11 @@ Uma requisição[^1] que usa o verbo HTTP[^2] HEAD utiliza a exata mesma estrutu
 
 ### Relevância
 
-Embora pareça redundante, por não retornar uma entidade em seu body, uma transação gerada por um HEAD ==consome menos largura de banda==. Dessa forma, ==a informação é trocada rapidamente e com um custo computacional menor quando comparado com o GET==. Ideal quando o objetivo do cliente é obter ==meta dados de determinado recurso== sem ter que lidar com uma representação do mesmo.
+Embora pareça redundante, por não retornar uma entidade em seu body, uma transação gerada por um HEAD ==consome menos largura de banda==[^7]. Dessa forma, ==a informação é trocada rapidamente e com um custo computacional menor quando comparado com o GET==. Ideal quando o objetivo do cliente é obter ==meta dados de determinado recurso== sem ter que lidar com uma representação do mesmo.
 
 ### Considerações importantes
 
-Como uma requisição HEAD não deveria possuir body[^7], ela não possui uma semântica definida para o mesmo. Seria relevante ==realizar implantações de mecanismos de defesa no resvidor alvo da requisição para rejeitar e cancelar a conexão caso esta tenha um body== a fim de evitar ataques como request smuggling[^8]. 
+Como uma requisição HEAD não deveria possuir body[^8], ela não possui uma semântica definida para o mesmo. Seria relevante ==realizar implantações de mecanismos de defesa no resvidor alvo da requisição para rejeitar e cancelar a conexão caso esta tenha um body== a fim de evitar ataques como request smuggling[^9]. 
 
 
 ### Referências:
@@ -32,9 +32,11 @@ Como uma requisição HEAD não deveria possuir body[^7], ela não possui uma se
 
 [^6]: [[Response headers]]
 
-[^7]: [[Request Message Body]]
+[^7]: [[Throughput]]
 
-[^8]: [[Request Smuggling Atack]]
+[^8]: [[Request Message Body]]
+
+[^9]: [[Request Smuggling Atack]]
 
 [[IETF HEAD (Verbo HTTP)]]
 
