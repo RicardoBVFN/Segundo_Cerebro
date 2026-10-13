@@ -2,7 +2,7 @@
 05-10-2026 11:25
 
 Tags: [[Web]], [[Desenvolvimento]], [[Tratamento de Dados]]
-Status: #jovial 
+Status: #embrionário  
 
 ### Definição
 
